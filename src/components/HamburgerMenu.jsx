@@ -2,6 +2,7 @@ import Hamburger from "hamburger-react"
 import { useState } from "react"
 import "./HamburgerMenu.css"
 import Resume from "../assets/Resume.pdf"
+import { Link } from 'react-router-dom';
 function HamburgerMenu(){
     const [openMenu, setOpenMenu] = useState(false);
 
@@ -13,10 +14,10 @@ function HamburgerMenu(){
                 toggled={openMenu} 
             />
             {openMenu ?  <div class="dropDownMenu">
-                <li><a href='/'>Home</a></li>
-                <li><a href='/aboutme'>About me</a></li>
-                <li><a href='/projects'>Projects</a></li>
-                <li><a href={Resume} target='_blank'>Resume</a></li>
+                <li><Link to='/'>Home</Link></li>
+                <li><Link to='/aboutme'>About me</Link></li>
+                <li><Link to='/projects'>Projects</Link></li>
+                <li><a href={Resume} target='_blank' rel="noopener noreferrer">Resume</a></li>
             </div> : <></>}
         </div>
     )

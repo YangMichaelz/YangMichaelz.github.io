@@ -3,6 +3,7 @@ import "./HomePage.css"
 
 import Typewriter from 'typewriter-effect';
 
+import { Link } from 'react-router-dom';
 
 
 function HomePage(){
@@ -21,7 +22,7 @@ function HomePage(){
                 }}/>
                 
             </div>
-            <a className="a" href="aboutme">About me</a>
+            <a className="a"><Link to='/aboutme'>About me</Link></a>
         </>
     )
 }
