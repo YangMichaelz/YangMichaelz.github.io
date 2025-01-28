@@ -1,0 +1,27 @@
+.hamburger{
+    margin-top: 16px;
+    visibility:hidden;
+}
+.dropDownMenu{
+    background-color: #9A8C98;
+    border-radius: 3px;
+    list-style-type:none;
+    text-align: left;
+    position: absolute;
+    visibility: hidden;
+}
+.dropDownMenu li{
+    padding-top: 8%;
+    padding-bottom: 8%;
+    font-size: small;
+}
+
+
+@media (max-width: 480px) {
+    .hamburger{
+        visibility: visible;
+    }
+    .dropDownMenu{
+        visibility: visible;
+    }
+}

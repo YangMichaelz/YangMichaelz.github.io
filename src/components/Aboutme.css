@@ -1,0 +1,150 @@
+.aboutMePanel{
+    text-align: center;
+    justify-content: center;
+    margin-top: 5%;
+    border-radius: 2em;
+    background: #F2E9E4;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 2px;
+    font-size: 100%;
+}
+
+
+.techStackPanel{
+    display:flex;
+    justify-content: center;
+    justify-content:space-evenly;
+    column-count: 2em 2;
+}
+
+.techStackOuterPanel{
+    background-color: #4A4E69;
+    display: flex;
+    flex-direction: column;
+    margin-top: 3%;
+    padding: 1em;
+    width: fit-content;
+    border-radius: 1em;
+    margin: auto;
+}
+
+.TechStackTitle{
+    font-weight: 500;
+    font-size: xx-large;
+}
+
+.aboutMePanel h1{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    margin-bottom: 4;
+    font-size: xxx-large;
+}
+.aboutMePanel h2{
+    margin-top:0;
+    font-size:75px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+.aboutMeInnerPannel{
+    width: auto;
+    margin-left:35em;
+    margin-right: 35em; 
+}
+
+
+
+.aboutMePanel span{
+    font-weight: 100;
+    font-size: 50px;
+    margin-top: 0;
+}
+
+
+.techStackElement{
+    background-color: rgb(199, 204, 218);
+    padding:0.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    border-radius: 2em;
+    margin:0.35em;
+    color:black;
+    font-size: small;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+@media (max-width: 400px) {
+    .aboutMePanel{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        margin-top: 0;
+        flex-direction: column;
+        padding: 1em;
+        margin-left:0;
+        margin-right: 0;
+        border-radius: 0;
+        width: auto;
+    }
+    
+    .aboutMeInnerPannel{
+        margin-left:0;
+        margin-right:0;   
+    }
+    .techStackElement{
+        border-radius: 0.5em;
+        color:black;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        font-size: xx-small;
+        padding: 0.075em;
+        margin:auto;
+    }
+    .techStackOuterPanel{
+        background-color: #4A4E69;
+        display: flex;
+        flex-direction: column;
+        margin-top: 3%;
+        width: fit-content;
+        border-radius: 1em;
+        margin: auto;
+    }
+}
+
+@media (max-device-width: 480px) and (min-device-width: 400px){
+    .aboutMePanel{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        margin-top: 0;
+        flex-direction: column;
+        padding: 1em;
+        margin-left:0;
+        margin-right: 0;
+        border-radius: 0;
+        width: auto;
+    }
+    
+    .aboutMeInnerPannel{
+        margin-left:0;
+        margin-right:0;   
+    }
+    .techStackElement{
+        border-radius: 0.5em;
+        color:black;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        font-size: xx-small;
+        padding: 0.3em;
+        margin:auto;
+    }
+    .techStackOuterPanel{
+        background-color: #4A4E69;
+        display: flex;
+        flex-direction: column;
+        margin-top: 3%;
+        width: fit-content;
+        border-radius: 1em;
+        margin: auto;
+    }
+}

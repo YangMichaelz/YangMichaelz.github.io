@@ -1,0 +1,97 @@
+.projectPanel{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+    flex-direction: column;
+    border-radius: 2em;
+    letter-spacing: 4px;
+    font-size: 110%;
+    width:100vw;
+}
+.projectPanel h1{
+    background: #F2E9E4;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 5%;
+    font-size: xxx-large;
+    font-weight: 400;
+}
+.project{
+    background-color: #4A4E69;
+    border-color: #011627;
+    border-style:solid;
+    padding:0.5em;
+    border-radius: 0.5em;
+    margin:0.5em;
+    transition: all;
+    transition-duration: 0.1s;
+    letter-spacing: 0.075em;
+    font-weight: 100;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.project img{
+    border-radius: 20px;
+    width: 200px;
+    height: 200px;
+}
+.project p{
+    letter-spacing: 0.03em;
+    color: #F2E9E4;
+}
+.project h2{
+    font-weight: 100;
+    font-size: xx-large;
+    color: #F2E9E4;
+}
+
+#projectContainer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.project p{
+    max-height: 80px;
+    min-height: 80px;
+}
+
+.project a{
+    border-radius: 10px;
+    background-color: #9A8C98;
+    font-weight: 400;
+    letter-spacing: 0;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em
+}
+
+  
+
+@media (max-width: 480px) {
+    .projectPanel{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        margin-top: 15%;
+        flex-direction: column;
+        margin-left:0;
+        margin-right: 0;
+        border-radius: 0;
+    }
+    .project img{
+        border-radius: 20px;
+        width: 200px;
+        height: 200px;
+    }
+    .project p{
+        letter-spacing: 0em;
+        font-size: small;
+    }
+    #projectContainer{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+    
+}
