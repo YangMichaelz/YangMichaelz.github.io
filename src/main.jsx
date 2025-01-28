@@ -2,6 +2,7 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
 import "./App.css"
+import './shootingStars.js';
 import Header from "./components/Header.jsx"
 import Aboutme from './components/Aboutme.jsx'
 import HomePage from './components/HomePage.jsx'
@@ -12,7 +13,6 @@ import {HashRouter, Routes, Route} from 'react-router-dom'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <div id="particles-js"></div>
     <HashRouter>
       <Header/>
       <Routes>

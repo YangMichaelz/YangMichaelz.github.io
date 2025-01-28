@@ -13,8 +13,7 @@ function Aboutme(){
                 <div className="aboutMeInnerPannel">
                     <p1>I am a second year student studying Computer Science at Carleton University.
                         In my free time I enjoy playing sports like Badminton and video games. Some of my hobbies include
-                        game development, piano and violin. Fun fact: I developed and published a game with an active player base, accumulating
-                        7+ million visits within the past year.
+                        game development, playing the piano and violin.
                     </p1>
                 </div>
 
