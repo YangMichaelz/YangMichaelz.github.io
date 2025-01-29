@@ -1,11 +1,17 @@
 .header{
     text-align: center;
-    padding-left: 2em;
-    padding-right: 2em;
+    padding-left: 1em;
+    padding-right: 1em;
     display:flex;
     justify-content: space-between;
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    overflow: hidden;
 }
+
 
 
 ul{
@@ -21,11 +27,7 @@ li a{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     letter-spacing: 2px;
 }
-.title{
-    
-    background: #F2E9E4;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.titlePage{
     font-family: sans-serif;
     font-weight:100;
     letter-spacing: 10px;
@@ -39,9 +41,6 @@ li a{
         font-family: sans-serif;
     }
     .title{
-        background: -webkit-linear-gradient(rgb(255, 255, 255), #1e2730);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
         font-family: sans-serif;
         font-weight:100;
         letter-spacing: 2px;
@@ -51,8 +50,11 @@ li a{
         text-align: center;
         display:flex;
         justify-content: space-between;
-        margin-top: 1em;
-        padding-left: 2em;
-        padding-right: 2em;
+        padding-left: 1em;
+        position: fixed;
+        padding-right: 1em;
+        top: 0;
+        left: 0;
+        right: 0;
     }
 }

@@ -8,21 +8,46 @@ import unityFPSGameImage from "../assets/FPS.png"
 import ProjectCard from "./ProjectCard.jsx"
 import { useRef } from "react";
 
+import { useGSAP } from '@gsap/react';
 
+import gsap from 'gsap';
+
+gsap.registerPlugin(useGSAP);
 
 function Projects(){
+    useGSAP(()=>{
+        gsap.from('.title', {y: "-300%", opacity: 0, duration: 1.5, ease: "power4.out"});
+        gsap.from(gsap.utils.toArray("#projectContainer > *"),{
+            x: -100, 
+            y: 30, 
+            duration: 1.5, 
+            stagger: 0.15, 
+            ease: "back.out(1.2)", 
+            opacity: 0,
+            scale: 0.8,
+            rotationZ: 10, 
+            scrollTrigger: { 
+                trigger: "#projectContainer",
+                start: "top 80%",
+            },
+            onComplete: () => gsap.to("#projectContainer > *", {scale: 1, duration: 0.3}) 
+        })
+    });
     return(
         <>
             <div className="projectPanel">
-                <h1>My Projects</h1>
+                <h1 className="title">My Projects</h1>
                 <div id="projectContainer">
-                    <ProjectCard
-                        title={"AIsk"}
-                        image={AIskImage}
-                        description={"A MERN-stack web application chatbot that uses Retrival-Augmented Generation (RAG) to generate accurate, context enhanced responses. Built with Tavily, LangChain, and Pinecone's vector DB."}
-                        url={"https://github.com/YangMichaelz/AIsk-RAG-Healthcare-Chat-Bot"}
-                        website={"Github"}
-                    />
+                    <div id="projectAnim">
+                        <ProjectCard
+                            title={"AIsk"}
+                            image={AIskImage}
+                            description={"A MERN-stack web application chatbot that uses Retrival-Augmented Generation (RAG) to generate accurate, context enhanced responses. Built with Tavily, LangChain, and Pinecone's vector DB."}
+                            url={"https://github.com/YangMichaelz/AIsk-RAG-Healthcare-Chat-Bot"}
+                            website={"Github"}
+                        />
+                    </div>
+                    <div id="projectAnim">
                     <ProjectCard
                         title={"Stable Cascade Discord Bot"}
                         image={stableCascadeImage}
@@ -30,6 +55,8 @@ function Projects(){
                         url={"https://github.com/YangMichaelz/stable-cascade-discord-bot"}
                         website={"Github"}
                     />
+                    </div>
+                    <div id="projectAnim">
                     <ProjectCard
                         title={"2D Dungeon Game"}
                         image={dungeonGameImage}
@@ -37,6 +64,9 @@ function Projects(){
                         url={"https://github.com/YangMichaelz/2D-Dungeon-Game"}
                         website={"Github"}
                     />
+
+                    </div>
+                    <div id="projectAnim">
                     <ProjectCard
                         title={"3D Dungeon Game"}
                         image={unityDungeonGameImage}
@@ -44,6 +74,8 @@ function Projects(){
                         url={"https://t3mplar.itch.io/3d-dungeon-game"}
                         website={"Itch.io"}
                     />
+                    </div>
+                    <div id="projectAnim">
                     <ProjectCard
                         title={"Failsafe"}
                         image={unityFPSGameImage}
@@ -51,6 +83,9 @@ function Projects(){
                         url={"https://t3mplar.itch.io/failsafe"}
                         website={"Itch.io"}
                     />
+
+                    </div>
+                    <div id="projectAnim">
                     <ProjectCard
                         title={"Bonnie's Wrath"}
                         image={bonniesWrathImage}
@@ -58,6 +93,7 @@ function Projects(){
                         url={"https://t3mplar.itch.io/bonnies-wrath"}
                         website={"Itch.io"}
                     />
+                    </div>
                 </div>
             </div>
             

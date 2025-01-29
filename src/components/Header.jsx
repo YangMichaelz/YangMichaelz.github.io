@@ -9,7 +9,7 @@ function Header(){
     return(
         <div class="float">
             <div class="header">
-                <h1 class="title">MY</h1>
+                <h1 class="titlePage">MY</h1>
                 <HamburgerMenu/>
                 <ul>
                     <li><Link to='/'>Home</Link></li>

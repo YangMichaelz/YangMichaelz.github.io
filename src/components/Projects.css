@@ -2,17 +2,14 @@
     text-align: center;
     display: flex;
     justify-content: center;
-    margin-top: 3%;
+    margin-top: 11%;
     flex-direction: column;
     border-radius: 2em;
     letter-spacing: 4px;
-    font-size: 110%;
+    font-size: 100%;
     width:100vw;
 }
 .projectPanel h1{
-    background: #F2E9E4;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
     margin-bottom: 5%;
     font-size: xxx-large;
     font-weight: 400;
@@ -27,7 +24,7 @@
     transition: all;
     transition-duration: 0.1s;
     letter-spacing: 0.075em;
-    font-weight: 100;
+    font-weight: 300;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -41,7 +38,7 @@
     color: #F2E9E4;
 }
 .project h2{
-    font-weight: 100;
+    font-weight: 500;
     font-size: xx-large;
     color: #F2E9E4;
 }

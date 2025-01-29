@@ -1,23 +1,39 @@
 import { useEffect } from 'react'
 import "./Aboutme.css"
 
+import { useGSAP } from '@gsap/react';
 
+import gsap from 'gsap';
 
-
+gsap.registerPlugin(useGSAP);
 
 function Aboutme(){
+
+    function scrollToTop(){
+        window.scrollTo(0,0);
+    }
+    useEffect(()=>{
+        scrollToTop();
+    })
+    useGSAP(()=>{
+        gsap.from('.title', {y: "200%", opacity: 0, duration: 1.5, ease: "power4.out"});
+        gsap.from('.content', {delay:0.5, x: "-20%", opacity: 0, duration: 2.5, ease: "power3.out"});
+        gsap.from('.techStack', {delay: 1.5, y: "100%", opacity: 0, duration: 2, ease: "power3.out"});
+        gsap.set('body', { overflow: 'hidden' })
+    });
     return(
         <>
             <div className="aboutMePanel">
-                <h1>About me</h1>
-                <div className="aboutMeInnerPannel">
+                <h1 className="title">About me</h1>
+                <div className="aboutMeInnerPanel content">
                     <p1>I am a second year student studying Computer Science at Carleton University.
                         In my free time I enjoy playing sports like Badminton and video games. Some of my hobbies include
-                        game development, playing the piano and violin.
+                        game development, and playing the piano and violin.
                     </p1>
                 </div>
 
             </div>
+            <div className="techStack">
             <h2 class="TechStackTitle">My tech stack:</h2>
             <div className="techStackOuterPanel">
                 
@@ -42,6 +58,7 @@ function Aboutme(){
                         <a href='https://flask.palletsprojects.com/en/stable/' target="_blank" className='techStackElement'>Flask</a>
                         <a href='https://git-scm.com/' target="_blank" className='techStackElement'>Git</a>
                     </div>
+                </div>
             </div>
         </>
     )

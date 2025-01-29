@@ -1,11 +1,8 @@
 .aboutMePanel{
     text-align: center;
     justify-content: center;
-    margin-top: 5%;
+    margin-top: 13%;
     border-radius: 2em;
-    background: #F2E9E4;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
     letter-spacing: 2px;
     font-size: 100%;
 }
@@ -48,12 +45,12 @@
     margin-bottom: 0;
 }
 
-.aboutMeInnerPannel{
+.aboutMeInnerPanel{
     width: auto;
+    text-align: left;
     margin-left:35em;
     margin-right: 35em; 
 }
-
 
 
 .aboutMePanel span{
@@ -64,13 +61,13 @@
 
 
 .techStackElement{
-    background-color: rgb(199, 204, 218);
+    background-color: #9A8C98;
     padding:0.5em;
     padding-left: 1em;
     padding-right: 1em;
     border-radius: 2em;
     margin:0.35em;
-    color:black;
+    color:#FFFFFF;
     font-size: small;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -79,8 +76,7 @@
     .aboutMePanel{
         text-align: center;
         display: flex;
-        justify-content: center;
-        margin-top: 0;
+        margin-top: 25%;
         flex-direction: column;
         padding: 1em;
         margin-left:0;
@@ -88,21 +84,24 @@
         border-radius: 0;
         width: auto;
     }
+    .aboutMeInnerPanel p1{
+        font-size: 15px;
+        line-height: 0;
+    }
     
-    .aboutMeInnerPannel{
+    
+    .aboutMeInnerPanel{
         margin-left:0;
         margin-right:0;   
     }
     .techStackElement{
         border-radius: 0.5em;
-        color:black;
         font-family:Verdana, Geneva, Tahoma, sans-serif;
         font-size: xx-small;
         padding: 0.075em;
         margin:auto;
     }
     .techStackOuterPanel{
-        background-color: #4A4E69;
         display: flex;
         flex-direction: column;
         margin-top: 3%;
@@ -117,7 +116,7 @@
         text-align: center;
         display: flex;
         justify-content: center;
-        margin-top: 0;
+        margin-top: 45%;
         flex-direction: column;
         padding: 1em;
         margin-left:0;
@@ -126,20 +125,18 @@
         width: auto;
     }
     
-    .aboutMeInnerPannel{
+    .aboutMeInnerPanel{
         margin-left:0;
         margin-right:0;   
     }
     .techStackElement{
         border-radius: 0.5em;
-        color:black;
         font-family:Verdana, Geneva, Tahoma, sans-serif;
         font-size: xx-small;
         padding: 0.3em;
         margin:auto;
     }
     .techStackOuterPanel{
-        background-color: #4A4E69;
         display: flex;
         flex-direction: column;
         margin-top: 3%;
